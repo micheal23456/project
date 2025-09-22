@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #0077cc; color: white; padding: 20px; }
+    nav a { margin-right: 15px; color: white; text-decoration: none; font-weight: bold; }
+    main { padding: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mobile mansion</h1>
+     <nav>
+    <a href="/">Home</a>
+    <a href="/products/create_product">Newphone</a>
+        <a href="/products/listing_page">List</a>
+
+    <a href="/products/retrieve_product">Edit</a>
+    
+</nav>
+    
+  </header>
+
+  <main>
+    <%- body %>
+  </main>
+</body>
+</html>
