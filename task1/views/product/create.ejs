@@ -1,0 +1,21 @@
+<% title='Create Product' %>
+<h1>Create Product</h1>
+<% if (error) { %>
+    <div style="color: red;">
+      <p>Error(s):</p>
+      <ul>
+        <% Object.values(error).forEach(err => { %>
+          <li><%= err.message %></li>
+        <% }); %>
+      </ul>
+    </div>
+  <% } %>
+ <form action="create_product" method="post">
+  <label for="productname">productname:</label>
+  <input type="text" id="productname" name="productname"><br>
+  <label for="description">quantity:</label>
+  <textarea id="quantity" name="quantity"></textarea><br>
+  <label for="price">Price:</label>
+  <input type="number" id="price" name="price" step="0.01"><br>
+  <input type="submit" value="Create Product">
+ </form>
