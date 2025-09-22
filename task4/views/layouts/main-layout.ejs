@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Club – <%= typeof title !== 'undefined' ? title : 'Welcome' %></title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #0077cc; color: white; padding: 20px; }
+    main { padding: 20px; }
+        nav a { margin-right: 15px; color: white; text-decoration: none; font-weight: bold; }
+
+    /* a { display: block; margin-top: 10px; } */
+  </style>
+</head>
+<body>
+  <header><h1>📚 Book Club</h1>
+     <nav>
+      <a href="/">Home</a>
+      <a href="/addbook">addbook</a>
+    </nav>
+  </header>
+  <main>
+    <%- body %>
+   
+  </main>
+</body>
+</html>
